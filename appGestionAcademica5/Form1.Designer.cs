@@ -37,6 +37,8 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             button3 = new Button();
+            label4 = new Label();
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
             // button1
@@ -107,18 +109,38 @@
             // 
             // button3
             // 
-            button3.Location = new Point(162, 247);
+            button3.Location = new Point(33, 205);
             button3.Name = "button3";
             button3.Size = new Size(278, 62);
             button3.TabIndex = 8;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(68, 327);
+            label4.Name = "label4";
+            label4.Size = new Size(38, 15);
+            label4.TabIndex = 9;
+            label4.Text = "label4";
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(187, 293);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(282, 49);
+            listBox1.TabIndex = 10;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(631, 321);
+            ClientSize = new Size(631, 446);
+            Controls.Add(listBox1);
+            Controls.Add(label4);
             Controls.Add(button3);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
@@ -145,5 +167,7 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private Button button3;
+        private Label label4;
+        private ListBox listBox1;
     }
 }
