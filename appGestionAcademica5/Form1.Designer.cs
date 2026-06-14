@@ -39,11 +39,13 @@
             button3 = new Button();
             label4 = new Label();
             listBox1 = new ListBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(393, 55);
+            button1.Location = new Point(393, 30);
             button1.Name = "button1";
             button1.Size = new Size(201, 69);
             button1.TabIndex = 0;
@@ -52,7 +54,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(393, 151);
+            button2.Location = new Point(393, 105);
             button2.Name = "button2";
             button2.Size = new Size(197, 61);
             button2.TabIndex = 1;
@@ -109,9 +111,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(33, 205);
+            button3.Location = new Point(393, 172);
             button3.Name = "button3";
-            button3.Size = new Size(278, 62);
+            button3.Size = new Size(197, 62);
             button3.TabIndex = 8;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
@@ -119,7 +121,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(68, 327);
+            label4.Location = new Point(37, 254);
             label4.Name = "label4";
             label4.Size = new Size(38, 15);
             label4.TabIndex = 9;
@@ -129,16 +131,25 @@
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(187, 293);
+            listBox1.Location = new Point(131, 220);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(282, 49);
+            listBox1.Size = new Size(110, 49);
             listBox1.TabIndex = 10;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(25, 291);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(565, 144);
+            dataGridView1.TabIndex = 11;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(631, 446);
+            ClientSize = new Size(631, 457);
+            Controls.Add(dataGridView1);
             Controls.Add(listBox1);
             Controls.Add(label4);
             Controls.Add(button3);
@@ -152,6 +163,7 @@
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -169,5 +181,6 @@
         private Button button3;
         private Label label4;
         private ListBox listBox1;
+        private DataGridView dataGridView1;
     }
 }
